@@ -1,22 +1,20 @@
 ﻿using System;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-public class Exercicio_15 
+public class Exemplo17 
 {
     public static void Main(string[] args) 
     {
-        bool resultado = VddFls(1);
-
-        if (resultado == true)
+        int[] IdadeAlunos = { 10 ,15, 17, 19};
+        //usando for
+        Console.WriteLine("Idade percorrida com for:");
+        for (int contador = 0; contador < IdadeAlunos.Length; contador++) 
         {
-            Console.WriteLine("O numnero e par");
+         Console.WriteLine(IdadeAlunos[contador]);
         }
-        else
+        //usando foreach
+        Console.WriteLine("Idade percorrida com foreach: ");
+        foreach (int idade in IdadeAlunos) 
         {
-            Console.WriteLine("O numero e impar");
+            Console.WriteLine(idade);
         }
-    }
-    static bool VddFls(int a)   
-    {
-        return a % 2 == 0;
     }
 }
